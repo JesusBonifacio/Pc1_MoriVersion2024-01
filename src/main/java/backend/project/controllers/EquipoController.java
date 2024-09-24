@@ -18,7 +18,7 @@ public class EquipoController {
     @Autowired
     private EquipoService equipoService;
 
-    // Listar equipos por liga
+    // Listar equipos por liga ola
     @GetMapping("/{idLiga}")
     public ResponseEntity<List<Equipo>> listarEquiposPorLiga(@PathVariable Long idLiga) {
         List<Equipo> equipos = equipoService.listarEquiposPorLiga(idLiga);
